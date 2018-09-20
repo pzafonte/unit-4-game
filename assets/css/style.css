@@ -1,0 +1,89 @@
+h1, h2, h3, h4, h5, h6, div, p{
+
+  color: white;
+  font-family: 'VT323', monospace;
+}
+
+body {
+  background-image: url("../images/stars.jpg");
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.character {
+  display: block;
+  float: left;
+  margin: 0 10%;
+}
+
+.character-info{
+
+  font-size: 16px;
+  font-family: 'VT323', monospace;
+}
+
+.box {
+  width:32px;
+  height:48px;
+}
+
+.box:hover {
+  outline: none;
+  border-color:blue;
+  box-shadow: 0 0 10px blue;
+}
+
+
+.opponent-box {
+  width:32px;
+  height:48px;
+  border: 2px solid red;
+  border-radius: 7px;
+}
+
+.opponent-box:hover { 
+  outline: none;
+  border-color:red;
+  box-shadow: 0 0 10px red;
+}
+
+#luke {
+  width: 32px;
+  height: 48px;
+  background: url('../images/luke.png') 0 0;
+  animation: play .8s steps(4) infinite;
+}
+
+#obiwan {
+  width: 32px;
+  height: 48px;
+  background: url('../images/obiwan2.png') 0 0;
+  animation: play .8s steps(4) infinite;
+}
+
+#d_sidious {
+  width: 32px;
+  height: 48px;
+  background: url('../images/darthsidious.png') 0 0;
+  animation: play .8s steps(4) infinite;
+}
+
+#d_maul {
+  width: 32px;
+  height: 48px;
+  background: url('../images/darthmaul.png') 0 0;
+  animation: play .8s steps(4) infinite;
+}
+
+#message{
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes play {
+    100% { background-position: -128px 0px; }
+}

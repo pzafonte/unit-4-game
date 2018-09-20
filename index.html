@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<title>STAR Wars JRPG</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Star Wars JRPG</h1>
+		<p>Instructions: 1)Select your character. 2)Select your oppononent. 3) Click on your oppononet to fight him!</p>
+		<div class="row">
+			<div class="col-12">
+				<div id="select-character"></div>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="col-3 col-sm-3 col-md-3">
+				<div id="human-player"></div>
+			</div>
+
+			<div class="col-3 col-sm-3 col-md-3">
+				<div id="active-opponent"></div>
+			</div>
+
+			<div class="col-6 col-sm-6 col-md-6">
+				<div id="select-opponent"></div>
+			</div>
+		</div>
+
+		<p id="message"></p>
+	</div>
+	
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
